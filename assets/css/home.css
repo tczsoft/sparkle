@@ -1,0 +1,380 @@
+
+body, select{
+    font-family: 'Poppins' !important;
+}
+
+
+#hero-section .carousel-inner{
+    height: calc(80vh - 100px);
+}
+ 
+#hero-section .carousel-inner img{
+    height: calc(80vh - 100px);
+    object-fit: cover;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
+
+#hero-section .carousel-caption{
+    z-index: 10;
+    padding-bottom: 0;
+    top: 45%;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+  
+.carousel-inner .carousel-item > img {
+    -webkit-animation: zoom-in-zoom-out 25s;
+    animation: zoom-in-zoom-out 25s;
+}
+
+#about-sec{
+    background-image:linear-gradient(#432C7A,#432C7A), url('https://www.thebeautyacademy.org/wp-content/uploads/2017/01/All-courses-DESKTOP-BANNER-1536x447.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.vr-line{
+    border-top: solid 10px;
+
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: #1a057b;
+}
+
+
+.navbar-toggler{
+    background-color: var(--primary-color);
+}
+
+.custom-li-rounded-click{
+    line-height: 45px;
+}
+
+.custom-li-rounded-click li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f00c";
+    color: var(--primary-color);
+    margin-right: 10px;
+    margin-left: -20px;
+
+}
+
+.custom-li-angle-right{
+    line-height: 25px;
+}
+
+.custom-li-angle-right li:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f105";
+    color: var(--primary-color);
+    margin-right: 10px;
+    margin-left: -20px;
+    font-size: 24px;
+}
+
+#whats-chat {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+    height: 40px;
+    width: 150px;
+    background: #25D366;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 99999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#chat-box {
+    position: fixed;
+    right: 2%;
+    bottom: 28%;
+    width: 280px;
+    height: 200px;
+    transition: all .5s;
+    z-index: 99999;
+}
+
+@media screen and (max-width: 992px) {
+    #chat-box {
+        right: -500%;
+    }
+}
+
+#chat-top {
+    width: 100%;
+    line-height: 2;
+    background: rgb(18, 140, 126);
+    color: white;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px;
+    font-family: inherit;
+}
+
+.chat-logo {
+    background: #fff;
+    border-radius: 50%;
+}
+
+#chat-top-right {
+    float: right;
+    padding: 5px 0;
+}
+
+#chat-msg {
+    background: url('../img/chartbox/whatsapp-chat-bg.png');
+    background-size: cover;
+    padding: 20px 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 25px -10px #999;
+}
+
+#chat-msg p {
+    font-size: 14px;
+    padding: 10px;
+    background: white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.comp {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#chat-msg p:after {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: 9px;
+    z-index: 100000000;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-right: 14px solid #ffffff;
+}
+
+.chat-in {
+    width: 80%;
+    display: flex;
+}
+
+#chat-form input {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    padding: 5px 10px;
+    line-height: 2;
+    width: 210px;
+}
+
+#send-btn {
+    width: 20%;
+    padding: 0 5px;
+}
+
+.icon{
+    color: white;
+}
+   
+.nav-link{
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+
+
+.text{
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 50px;   
+}
+.text-fs{
+    font-weight: 19px;
+}
+
+.wd-line{
+    border-top: solid 3px;
+    width: 20%;
+    color: var(--primary-color);
+}
+
+#our-courses a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+
+.footer {
+    background-color: var(--primary-bg);
+    color: black;
+}
+.footer .en{
+    color: black;
+   
+}
+.en{
+    text-decoration: none;
+    color: black;
+    font-weight: 19px;
+}
+li{
+    list-style: none;
+}
+.footer .line :hover{
+    color: var(--primary-color);
+}
+.bg{
+    color: var(--primary-color)
+}
+.footer ul .line{
+    margin-bottom: 10px;
+}
+.courses{
+    background-color: var(--primary-bg);
+}
+.courses .line{
+    margin-bottom: 20px;
+}
+
+.text-justify{
+    text-align: justify;  
+}
+.color-icons:hover{
+    background-color:  var(--primary-color);
+    color: white;  
+}
+.color-icons{
+    background-color: white;
+}
+.new-icons{
+    color:var(--primary-color);
+}
+.up-down{
+   position: relative;
+    top: 40px;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden; 
+}
+
+.cs-size {
+    height: 89vh;
+    width:100%;
+ 
+    
+}
+
+.vertical{
+    top: 0;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;   
+    color: var(--primary-color);
+
+}
+
+.vertical h2{
+    font-size: 78px;
+    font-weight: bolder;
+}
+
+.in-dex{
+    position: relative;
+    z-index: 5;
+}
+
+#our-courses .card{
+    transition: all 0.2s ease;
+
+    cursor: pointer !important;
+    overflow-x: hidden;
+}
+
+#our-courses .card:hover{
+    box-shadow: 5px 5px 10px #8888886e;
+}
+
+.res-img{
+    cursor: pointer;
+    width:200;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.my-vh-75{
+    min-height: 60vh;
+}
+
+.chart-card:before{
+    border-style: solid;
+    height: 0 !important;
+    width: 0 !important;
+    border-color: #fff transparent transparent;
+    border-width: 27px 10px 0 !important;
+    border-left-color: transparent!important;
+    border-right-color: transparent!important;
+    bottom: -19px !important;
+    left: 50px !important;
+    z-index: 1;
+    -webkit-transform: rotate(27deg);
+    -ms-transform: rotate(27deg);
+    transform: rotate(27deg) !important;
+}
+
+.chart-card:before {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    transition: border-color .2s ease, bottom .2s ease;
+}
+
+.chart-card:hover{
+    transform: translate3d(0, -4px, 0);
+    transition: all .2s ease;
+}
+
+#testimonial{
+    z-index: 20;
+}
+
+.my-icon{
+    -webkit-transform: translatex(0px);
+    transform: translatex(0px); 
+    margin-top: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#our-courses a:hover .my-icon{
+    -webkit-transform: translatex(10px);
+    transform: translatex(10px); 
+    margin-top: 0.4rem;
+    transition: all 0.2s ease-in-out;
+}
+

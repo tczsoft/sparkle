@@ -1,0 +1,14 @@
+.hoverMebottom:after{
+    position:absolute;
+    top:100%;
+    left:0%;
+    width:0;
+    height:5px;
+    background: var(--primary-color);
+    display:block;
+    content:'';
+    transition: width 0.5s ease-in-out;
+  }
+  .hoverMebottom:hover:after{
+    width:100%;
+  }

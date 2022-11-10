@@ -1,0 +1,57 @@
+.wall-paper{
+    background-image: url("../img/wallpaper/wall-1.jpg") !important;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#secondry-toggle{
+    display: block; 
+}
+
+@media screen and (min-width: 992px) {
+    #navbarNav{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #secondry-toggle{
+        display: none; 
+    }
+}
+
+.navbar .dropdown .dropdown-menu{
+
+    top: 30px;
+    left: -50%;
+    width: 170px;
+    text-align: left;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); 
+    margin-top: 0.4rem;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    --bs-dropdown-link-hover-color: var(--primary-color);
+    --bs-dropdown-link-hover-bg: var(--primary-bg);
+    --bs-dropdown-link-active-bg: var(--primary-bg);
+}
+
+.navbar .dropdown:hover .dropdown-menu{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+}
+
+.stay-open{
+    display: block !important;
+}

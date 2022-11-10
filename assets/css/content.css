@@ -1,0 +1,64 @@
+.top-padding{
+    padding-top: 100px !important;
+} 
+
+.view-sm-sec {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.view-lg-sec {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+
+.view-sec {
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+.primary-bg{
+    background-color: var(--primary-bg) !important;
+}
+
+.primary-color{
+    color : var(--primary-color) !important;
+}
+
+.secondry-color{
+   color : var(--secondry-color);
+}
+
+.sandal-bg{
+    background-color: #FCE2DB;
+}
+.bg-light-dark{
+    background-color: #80489C;
+}
+
+.footer-bg-color{
+    background-color: var(--secondry-color) !important;
+}
+
+.card-shadow{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
+    transition: all .2s ease;
+}
+.header-shadow{
+    box-shadow: 3px 0 7px rgb(0 0 0 / 30%);
+}
+
+.text-justify{
+    text-align: justify !important;
+}
+
+.btn-pink{
+    background-color: #80489C;
+    color: white;
+}
+
+.btn-pink:hover{
+    background-color: var(--secondry-color);
+    color: white;
+}
