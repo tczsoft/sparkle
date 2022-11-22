@@ -18,7 +18,14 @@ body, select{
 #hero-section .carousel-caption{
     z-index: 10;
     padding-bottom: 0;
-    top: 45%;
+    top: 34%;
+}
+
+@media screen and (min-width: 992px){
+    .home-title{
+        font-size: 62px;
+
+    }
 }
 
 @keyframes zoom-in-zoom-out {
