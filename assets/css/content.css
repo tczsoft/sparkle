@@ -37,6 +37,14 @@
     background-color: #80489C;
 }
 
+.dark-blue-bg{
+    background-color: #432C7A !important;
+}
+
+.dark-blue-text{
+    color: #432C7A;
+}
+
 .footer-bg-color{
     background-color: var(--secondry-color) !important;
 }

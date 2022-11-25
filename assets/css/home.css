@@ -4,8 +4,11 @@ body, select{
 }
 
 
-#hero-section .carousel-inner{
-    height: calc(80vh - 100px);
+#hero-section{
+    height: 87vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.174),rgba(0, 0, 0, 0.174)),url('../img/home/img-6.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
  
 #hero-section .carousel-inner img{
@@ -14,12 +17,13 @@ body, select{
     -webkit-filter: brightness(0.6);
     filter: brightness(0.6);
 }
-
+/*
 #hero-section .carousel-caption{
     z-index: 10;
     padding-bottom: 0;
     top: 34%;
 }
+*/
 
 @media screen and (min-width: 992px){
     .home-title{
@@ -28,6 +32,7 @@ body, select{
     }
 }
 
+  /*
 @keyframes zoom-in-zoom-out {
     0% {
       transform: scale(1, 1);
@@ -39,14 +44,14 @@ body, select{
       transform: scale(1, 1);
     }
 }
-  
+
 .carousel-inner .carousel-item > img {
     -webkit-animation: zoom-in-zoom-out 25s;
     animation: zoom-in-zoom-out 25s;
 }
-
+*/
 #about-sec{
-    background-image:linear-gradient(#432C7A,#432C7A), url('https://www.thebeautyacademy.org/wp-content/uploads/2017/01/All-courses-DESKTOP-BANNER-1536x447.jpg');
+   
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -96,7 +101,7 @@ body, select{
 #whats-chat {
     position: fixed;
     right: 2%;
-    bottom: 5%;
+    bottom: 11%;
     height: 40px;
     width: 150px;
     background: #25D366;

@@ -15,10 +15,10 @@
 </head>
 <body>
   <!--Header start-->
-    <header class="fixed-top header-shadow">   
-        <nav class="navbar navbar-expand-lg bg-light">
+    <header class="fixed-top">   
+        <nav class="navbar navbar-expand-lg">
             <div class="container ">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand bg-white rounded" href="index.html">
                     <img src="./assets/img/logo/Sparkle-logo.png"  height="80px" alt="">
                 </a>
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-1" aria-controls="navbarNav-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +26,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav-1">
                     <ul class="navbar-nav ">
-                        <li class="nav-item "> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
-                        <li class="nav-item"> <a class="nav-link " href="about.html">About</a> </li>
-                        <li class="nav-item"> <a class="nav-link " href="placement.html">Placement</a> </li>
-                        <li class="nav-item"> <a class="nav-link " href="gallery.html">Gallery</a> </li>
-                        <li class="nav-item"> <a class="nav-link " href="contactus.html">Contact</a> </li>
+                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="about.html">About</a> </li>
+                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="placement.html">Placement</a> </li>
+                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="gallery.html">Gallery</a> </li>
+                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="contactus.html">Contact</a> </li>
                     </ul>
                 </div>
             </div>
@@ -40,11 +40,15 @@
 
     <main>
       <!--home start-->
-        <section class="top-padding overflow-x-hidden " id="hero-section">
+        <section class="overflow-x-hidden d-flex align-items-center" id="hero-section">
             <div class="container-fluid px-0">
                 <div class="row">
                     <div class="col-md-12">
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="hero-sec-wall text-center">
+                            <h1 class="fw-bolder home-title mb-3 text-white">Welcome to Sparkle Academy</h1>
+                            <button class="btn btn-outline-light">Download Brochure <i class="fa-solid fa-download"></i></button>
+                        </div>
+                      <!--  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">                            
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2500">
                                     <img src="./assets/img/home/img-5.jpg" class="d-block w-100" alt="..." loading="lazy">
@@ -59,32 +63,29 @@
                                     <h1 class="fw-bolder home-title mb-3">Welcome to Sparkle Academy</h1>
                                     <button class="btn btn-outline-light">Download Brochure <i class="fa-solid fa-download"></i></button>
                                   </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="view-sm-sec">
-            <div class="container-fluid">
-                <div class="row d-flex align-self-cente">
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                        <img src="./assets/img/quality/img-1.png" class="img-fluid mb-2" width="80px" alt="" loading="lazy">
-                        <p class="h4"><span class="h6">Consistent</span><br> Delivery</p>
+        <section class="dark-blue-bg">
+            <div class="container-fluid px-0 overflow-x-hidden py-1">
+                <div class="row">
+                    <div class="col-md-3 align-self-cente">
+                        <img src="./assets/img/img-1.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                        <img src="./assets/img/quality/img-2.png" class="img-fluid mb-2" width="80px" alt="" loading="lazy">
-                        <p class="h4 mt-1"><span class="h6">Experienced</span><br> Trainers</p>
-                    </div>
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                        <img src="./assets/img/quality/img-3.png" class="img-fluid mb-2" width="80px" alt="" loading="lazy">
-                        <p class="h4 mt-1"><span class="h6">Career</span> <br> Assistance</p>
-                    </div>
-                    <div class="col-md-3 text-center mb-3 mb-md-0">
-                        <img src="./assets/img/quality/img-4.png" class="img-fluid mb-2" width="80px" alt="" loading="lazy">
-                        <p class="h4 mt-1"><span class="h6">Professional</span> <br> Certification</p>
-                    </div>
+                    <div class="col-md-9 align-self-center">
+                        <div class="row">
+                            <div class="col-md-9 text-center text-md-start">
+                                <p class="h2 my-2 text-white">READY TO START YOUR <br> CAREER IN BEAUTY & WELLNESS INDUSTRY</p>
+                            </div>
+                            <div class="col-md-3 my-2 align-self-center text-center">
+                                <button class="btn btn-outline-light">JOIN OUR COURSE IMMEDIATELY</button>
+                            </div>
+                        </div>
+                        </div>
                 </div>
             </div>
         </section>
@@ -92,7 +93,7 @@
       <!--about start-->
         <section class="position-relative view-sec" id="about-sec">
             <div class="col-md-12 vertical position-absolute d-none d-md-block ">
-                <h2 class="text-white">About Us</h2>
+                <h2 class="dark-blue-text">About Us</h2>
             </div>
             <div class="container in-dex">
                 <div class="row">
@@ -104,7 +105,7 @@
                     </div>
                     <div class="col-md-7">
                         <h1 class="text">Welcome to Sparkle Academy in Villupuram</h1>
-                        <p class="text-fs pt-4 text-justify text-white">We warmly welcome the viewers and the visitors of our Flowers Beauty Academy. One of the leading Beautician training courses in Chennai. Our academy offers the best Job oriented beautician training in Chennai. Our staff and faculty will educate our students to ensure and reaching a successful goal in their field. Our academy has been in the field of beauty since 2004. We aim to teach our students with full involvement and with caress. We satisfy our student’s needs and requirements and also we give practices to them to get well trained in the beauty field. Our academy is becoming the best Beautician course in Chennai. We also provide our students the best companion and will be a good guidance for their course. Also, we provide our students' good assistance even after the successful completion of the beauty parlor course.</p>
+                        <p class="text-fs pt-4 text-justify">The best makeup academy in Villupuram, Sparkle Academy, offers an extensive curriculum for ambitious and professional makeup artists. At Sparkle Academy, we provide training in many subspecialties, including beauty therapy, spa and body treatment, hair styling, professional makeup, nail care, and salon and spa management. We have a highly skilled team that can provide you with the skills and knowledge you need to succeed in this specialized industry. Our main aim is to provide quality training and guidance to everyone who joins us and transform them into skilled professionals. We strive to continuously upgrade the Beauty Parlour Courses standard and establish ourselves as the Best Beauty Academy in Villupuram.</p>
                     </div>
                 </div>
             </div>
@@ -255,45 +256,43 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text ">Why Sparkle Academy</h1>
-                        <p class="pt-2 text-fs text-white">Flowers Beauty Academy is here to fascinate many students life with happy as per they desire to have in their future goal. Since our academy brings all kind of course facilities to the students thus to learn more about with detail. Our academy gives you the best practices and ranged many students to the top with independent. They might stands up with independent and shine in their career.</p>
+                        <p class="pt-2 text-fs text-white">The purpose of Sparkle Academy is to make the lives of as many students as possible as happy as they hope to achieve in the future. Our academy provides you with the best methods and has helped numerous students rise to the top on their own. They may become independent and succeed in their careers.</p>
                     </div>
                     <div class="row down pt-5 text-center">
                         <div class="col-lg-3 col-md-6 mb-3 text-white">
-                            <img src="./assets/img/quality/img-1.svg" class="img-fluid" width="70px" alt="">
-                            <p class="mb-0 align-self-center">Hundred percent
-                            <span> placement support</span></p>
+                            <img src="./assets/img/quality/img-1.svg" class="img-fluid mb-2" width="70px" alt="">
+                            <p class="mb-0 align-self-center">100% Placement Support</p>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3 text-white align-self-end">
-                            <i class="fa-regular fa-pen-to-square fs-1"></i>
-                            <p class="">Weekend classes available </p>
+                            <i class="fa-regular fa-pen-to-square fs-1 mb-2"></i>
+                            <p class="">Weekend Classes</p>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3 text-white align-self-end">
-                            <i class="fa-solid fa-share-from-square fs-1"></i>
-                            <p class="">Hands on training</p>
+                            <i class="fa-solid fa-share-from-square fs-1 mb-2"></i>
+                            <p class="">Hands on Training</p>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3 text-white align-self-end">
-                            <i class="fa-brands fa-creative-commons-remix fs-1"></i>
-                            <p class="">Installment Mode Available</p>
+                            <i class="fa-brands fa-creative-commons-remix fs-1 mb-2"></i>
+                            <p class="">Payment through Instalment</p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 mb-3 text-white">
-                            <img src="./assets/img/quality/img-5.svg" class="img-fluid" width="70px" alt="">
-                            <p class="">Learn from the most experienced and friendly faculty
-                                International teaching standards</p>
+                            <img src="./assets/img/quality/img-5.svg" class="img-fluid mb-2" width="70px" alt="">
+                            <p class="">Experienced Professionals</p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 mb-3 text-white">
-                            <img src="./assets/img/quality/img-3.svg" class="img-fluid" width="70px" alt="">
-                            <p class="">Individual sessions for better understanding</p>
+                            <img src="./assets/img/quality/img-3.svg" class="img-fluid mb-2" width="70px" alt="">
+                            <p class="">Individual Sessions</p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 mb-3 text-white">
-                            <img src="./assets/img/quality/img-2.svg" class="img-fluid" width="70px" alt="">
-                            <p class="">Practice on the Dummy & Live Demo</p>
+                            <img src="./assets/img/quality/img-2.svg" class="img-fluid mb-2" width="70px" alt="">
+                            <p class="">Practice on Dummy & Live Demo</p>
                         </div>
 
                         <div class="col-lg-3 col-md-6 mb-3 text-white">
-                            <img src="./assets/img/quality/img-4.svg" class="img-fluid" width="70px" alt="">
+                            <img src="./assets/img/quality/img-4.svg" class="img-fluid mb-2" width="70px" alt="">
                             <p class="">Certification</p>
                         </div>
                     </div>
@@ -340,7 +339,7 @@
                     <div class="col-md-3 mb-4">
                         <img src="./assets/img/logo/Sparkle-logo.png" class="img-fluid" width="150px" alt="" loading="lazy">
                         <p class="text-justify text-fs">
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            The best makeup academy in Villupuram, Sparkle Academy, offers an extensive curriculum for ambitious and professional makeup artists. At Sparkle Academy, we provide training in many subspecialties, including beauty therapy, spa and body treatment, hair styling, professional makeup, nail care, and salon and spa management.
                         </p>
                         <hr>
                         <div class="social-media text-center">
@@ -379,8 +378,8 @@
                         <h4 class=" primary-color mb-4">Contact</h4>  
                         <ul class="ps-0 line mb-0">
                             <li>
-                                <p><i class="fa-solid fa-location-dot me-2"></i> <span>Sparkle Academy, SLS Tower 1st floor 
-                                    Oppo logalakshmi mahal,  East Pondy Road, Villupuram 605602.</span>
+                                <p><i class="fa-solid fa-location-dot me-2"></i> <span>Sparkle Academy, SLS Tower 1st floor,
+                                    Opposite to Loga Lakshmi Mahal,  East Pondy Road, Villupuram 605602.</span>
                                 </p> 
                                 <hr> 
                             </li>
@@ -401,12 +400,14 @@
             </div>    
         </section>
         
-        <section class="footer py-3">
+        <section class="footer py-3 dark-blue-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-between">
-                        <p class="mb-0"><a class="en"href="#"> Courses</a> <span class="ms-2"><a class="en"href="#"> Contact</a></span></p>
-                        <p class="mb-0"> @2020 Sparkle Academy. Developed By <a class="primary-color en"href="#">  Thirsty Crowz</a></p>
+                        <p class="mb-0"><a class="en text-white" href="#our-courses"> Courses</a>
+                            <span class="ms-2"><a class="en  text-white" href="contactus.html"> Contact</a></span>
+                        </p>
+                        <p class="mb-0 text-white"> @2020 Sparkle Academy. Developed By <a class="primary-color en"href="#">  Thirsty Crowz</a></p>
                     </div>
                 </div>
             </div>
@@ -441,6 +442,26 @@
     
     <script src="./assets/package/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        window.onscroll = function () {
+            scroll()
+        };
+
+        function scroll() {
+        var topbar = document.body.scrollTop;
+        if (topbar >= 100 || document.documentElement.scrollTop >100) {
+
+            document.getElementsByTagName('header')[0].classList.add("bg-white");
+            document.getElementsByTagName('header')[0].classList.add("header-shadow");
+
+        } 
+        else {
+            document.getElementsByTagName('header')[0].classList.remove("bg-white");
+            document.getElementsByTagName('header')[0].classList.remove("header-shadow");
+        }
+
+        }
+    </script>
     <script>
         chart_box = function(){
             document.getElementById('chat-box').style.right = "2%";
