@@ -77,6 +77,8 @@
     transform: translateY(0);
 }
 
-.stay-open{
-    display: block !important;
+@media screen and (min-width : 992px) {
+    .stay-open{
+        display: block !important;
+    }
 }

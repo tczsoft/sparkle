@@ -3,19 +3,6 @@ body, select{
     font-family: 'Poppins' !important;
 }
 
-/*header{
-    transition: all .5s ease;
-    padding: 1px 0px;
-    transform: scaleY(0);
-}
-
-header.header-shadow{
-    transition: all .5s ease;
-    padding: 1px 0px;
-    transform: scaleY(1);
-    background-color: white;
-}*/
-
 header .header-bg-color{
     opacity: 0;
     position: absolute;
@@ -32,6 +19,7 @@ header .header-bg-color{
     --webkit-transform-style: preserve-3d;
     --ms-transform-style: preserve-3d;
 }
+
 .navbar{
     position: relative;
     z-index: 1030;
@@ -49,9 +37,12 @@ header.header-shadow .header-bg-color{
     z-index: 5;
     background-color: white;
     transform: scaleY(1);
+    -webkit-transform : scaleY(1);
+    -webkit-transform : scaleY(1);
     transition: all .3s ease-in-out;
-    --webkit-transform-style: preserve-3d;
-    --ms-transform-style: preserve-3d;
+
+    --webkit-transform-style: scaleY(1);
+    --ms-transform-style: scaleY(1);
 }
 
 #hero-section{
@@ -75,6 +66,42 @@ header.header-shadow .header-bg-color{
 
 #navbarNav-1.nav-active ul{
     padding: 0px 0px 0px 45px;
+}
+
+.navbar .hover-dropdown-i .hover-dropdown-i-menu{
+
+    width: 220px;
+    --bs-dropdown-link-hover-color: var(--primary-color);
+    --bs-dropdown-link-hover-bg: var(--primary-bg);
+    --bs-dropdown-link-active-bg: var(--primary-bg);
+}
+
+@media screen and (min-width : 992px) {
+    .navbar .hover-dropdown-i .hover-dropdown-i-menu{
+
+        top: 30px;
+        width: 220px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: 0.2s;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px); 
+        margin-top: 0.4rem;
+        transition: all 0.2s ease-in-out;
+        border-radius: 10px;
+        --bs-dropdown-link-hover-color: var(--primary-color);
+        --bs-dropdown-link-hover-bg: var(--primary-bg);
+        --bs-dropdown-link-active-bg: var(--primary-bg);
+    }
+    
+    .navbar .hover-dropdown-i:hover .hover-dropdown-i-menu{
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    
+    }
 }
 
 /*

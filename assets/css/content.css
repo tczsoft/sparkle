@@ -91,8 +91,8 @@
 
 @media screen and (min-width : 992px) {
     .padding-md-lg{
-        padding-left: 10rem !important;
-        padding-right: 10rem !important;
+        padding-left: 15rem !important;
+        padding-right: 15rem !important;
     }
 }
 
