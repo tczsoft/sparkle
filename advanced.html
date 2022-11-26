@@ -16,41 +16,69 @@
 <body>
     <!--Header start-->
     <header class="fixed-top">   
-      <nav class="navbar navbar-expand-lg">
-          <div class="container ">
-              <a class="navbar-brand bg-white rounded" href="index.html">
-                  <img src="./assets/img/logo/Sparkle-logo.png" height="80px" alt="">
-              </a>
-              <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="fa-solid fa-bars text-white"></span>
-              </button>
-
-              <div class="dropdown" id="secondry-toggle">
-                <button class="btn btn-light" type="button" id="secondry-toggle-button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu <i class="fa-solid fa-sliders"></i>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container ">
+                <a class="navbar-brand bg-white rounded" href="index.html">
+                    <img src="./assets/img/logo/Sparkle-logo.png" height="80px" alt="">
+                </a>
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars text-white"></span>
                 </button>
-                <ul class="dropdown-menu text-center stay-open ">
-                  <li> <a class="dropdown-item primary-color" href="index.html">Home</a> </li>
-                  <li> <a class="dropdown-item primary-color" href="about.html">About</a> </li>
-                  <li> <a class="dropdown-item primary-color" href="placement.html">Placement</a> </li>
-                  <li> <a class="dropdown-item primary-color" href="gallery.html">Gallery</a> </li>
-                  <li> <a class="dropdown-item primary-color" href="contactus.html">Contact</a> </li>
-                </ul>
-              </div>
-
-              <div class="collapse navbar-collapse justify-content-end bg-white px-5 rounded" id="navbarNav">
-                  <ul class="navbar-nav ">
-                      <li class="nav-item "> <a class="nav-link" aria-current="page" href="index.html">Home</a> </li>
-                      <li class="nav-item"> <a class="nav-link active" href="about.html">About</a> </li>
-                      <li class="nav-item"> <a class="nav-link" href="placement.html">Placement</a> </li>
-                      <li class="nav-item"> <a class="nav-link" href="gallery.html">Gallery</a> </li>
-                      <li class="nav-item"> <a class="nav-link" href="contactus.html">Contact</a> </li>
+  
+                <div class="dropdown hover-dropdown" id="secondry-toggle">
+                  <button class="btn btn-light" type="button" id="secondry-toggle-button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu <i class="fa-solid fa-sliders"></i>
+                  </button>
+                  <ul class="dropdown-menu hover-dropdown-menu text-center stay-open">
+                    <li> <a class="dropdown-item primary-color" href="index.html">Home</a> </li>
+                    <li> <a class="dropdown-item primary-color" href="about.html">About</a> </li>
+                    <li class="dropstart hover-dropstart"> <a class="dropdown-item primary-color dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Courses</a>
+                        <ul class="dropdown-menu hover-dropstart-menu stay-open">
+                            <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+                            <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+                            <li><a class="dropdown-item" href="diploma&master.html">Diploma & Master</a></li>
+                            <li><a class="dropdown-item" href="hi-end.html">Hi-End</a></li>
+                            <li><a class="dropdown-item" href="cosmetology.html">Cosmetology</a></li>
+                            <li><a class="dropdown-item" href="Professional.html">Professional Make-Up</a></li>
+                            <li><a class="dropdown-item" href="hdPro.html">HD Pro Makeup</a></li>
+                            <li><a class="dropdown-item" href="hairsytle.html">Hair Styling</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="dropdown-item primary-color" href="placement.html">Placement</a> </li>
+                    <li> <a class="dropdown-item primary-color" href="gallery.html">Gallery</a> </li>
+                    <li> <a class="dropdown-item primary-color" href="contactus.html">Contact</a> </li>
                   </ul>
-              </div>
-          </div>
-      </nav>
-    </header>
-    <!--header end-->
+                </div>
+  
+                <div class="collapse navbar-collapse justify-content-end bg-white px-5 rounded" id="navbarNav">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item "> <a class="nav-link" aria-current="page" href="index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="about.html">About</a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="basic.html">Basic</a></li>
+                                <li><a class="dropdown-item" href="advanced.html">Advanced</a></li>
+                                <li><a class="dropdown-item" href="diploma&master.html">Diploma & Master</a></li>
+                                <li><a class="dropdown-item" href="hi-end.html">Hi-End</a></li>
+                                <li><a class="dropdown-item" href="cosmetology.html">Cosmetology</a></li>
+                                <li><a class="dropdown-item" href="Professional.html">Professional Make-Up</a></li>
+                                <li><a class="dropdown-item" href="hdPro.html">HD Pro Makeup</a></li>
+                                <li><a class="dropdown-item" href="hairsytle.html">Hair Styling</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"> <a class="nav-link" href="placement.html">Placement</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="gallery.html">Gallery</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="contactus.html">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header-bg-color"></div>
+      </header>
+      <!--header end-->
       <main>
 
         <section class="view-sec wall-paper d-flex align-items-center justify-content-center">
@@ -70,16 +98,25 @@
         <section class="view-sec">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-3">
-                        <img src="./assets/img/courses/img-2.jfif" class="img-fluid mb-3" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-12 text-content ">
-                        <h3 class="fw-bold pt-1 text-muted">Advanced Course</h3>
+                    <div class="col-md-12 mb-3">
+                        <h3 class="fw-bold pt-1 text-muted text-center">Advanced Course</h3>
                         <hr class="line">
-                        <p class="pt-2 text-justify">The Advance Course in the Flowers Beauty Academy tutelage you to learn the entire process of the makeup artistry and related treatments of latest technology. Our academy will assist the right way of handling the tools and kits of the treatment and the way of doing the process. Though, we even teach them the elaboration of the treatment and the things to use for the customer, to have a good look in their face and in skin. Our advanced courses will train our students to become the advanced creative production makeup artist in the beauty industry field. We give full-corporation and well knowledge ability to the students to perform a high-level competency in their career. The advanced beauty course such as hot oil massage, pimple treatment, body techniques and many others techniques are here to enhance your beauty and to have the glossy look in the skin and face. The advanced course may take the duration of at least 8 months to study the entire process and procedure of the course. Our well experienced trainers will train the students in the industry as the best advanced makeup artistry. Our academy introduces highly advanced and updated technology to have the body skin and face with comely and beautifully.</p>
-                    </div>
-                    <div class="col-md-12">
-                        <p class="mb-0 text-justify">To escalate your skills and knowledge more in the field of beauty industry, we are here to accomplish your aim. Our Flowers Beauty Academy values your dream and we do more to achieve our student’s vision as our mission. The job which we work as a profession must need to be learnt very carefully and eagerly for the students. Our staff helps our students in various manners to perform well in their career and to grow up with that. Students must need to know and to acknowledge the rudimentary journey of the beauty course. Makeup and other related treatments and techniques, which are used to have the people’s skin and face to glow and to look pretty, our Flowers beauty academy is ready to teach you. To have a high-level reach in career of beauty industry field join our academy and start your journey with more comely and happily.</p>
+                        <div class="text-center">
+                            <img src="./assets/img/courses/img-2.jfif" class="img-size mb-3" alt="">                            
+                        </div>
+                        <div class="px-0 padding-md-lg">
+                            <p class="pt-2 text-justify">At Sparkle Academy, we have developed a Beauty Parlour Course to support you excel in the beauty world. To attend our Beautician Classes, you don’t need prior experience and knowledge in the beauty field. Our Basic Beauty Course will guide you via practical instructions along with theoretical ones. After the completion of our Beautician Course, you will be able to gain knowledge and find the most suitable job as a beautician/beauty therapist.</p>
+                            <p class="h3 fw-semibold pt-3">Benefits of our Course?</p>
+                            <p>We as a Beautician institute will train you in what is needed to be a successful beautician. Major advantages that you will have with our Beauty Parlour Course re as follows:</p>
+                            <ul class="custom-li-rounded-click">
+                                <li>Focus on practical knowledge</li>
+                                <li>Sound knowledge of all associated terms, tools, and products</li>
+                                <li>Training from certified & experienced trainers</li>
+                                <li>Affordable fees</li>
+                                <li>Job-oriented training</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

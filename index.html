@@ -21,20 +21,21 @@
                 <a class="navbar-brand bg-white rounded" href="index.html">
                     <img src="./assets/img/logo/Sparkle-logo.png"  height="80px" alt="">
                 </a>
-                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-1" aria-controls="navbarNav-1" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler shadow-none" onclick="navbar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav-1" aria-controls="navbarNav-1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa-solid fa-bars text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav-1">
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav">
                         <li class="nav-item bg-white rounded me-2"> <a class="nav-link active" aria-current="page" href="index.html">Home</a> </li>
-                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="about.html">About</a> </li>
-                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="placement.html">Placement</a> </li>
-                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="gallery.html">Gallery</a> </li>
-                        <li class="nav-item bg-white rounded me-2"> <a class="nav-link " href="contactus.html">Contact</a> </li>
+                        <li class="nav-iteme me-2"> <a class="nav-link  text-whit" href="about.html">About</a> </li>
+                        <li class="nav-item me-2"> <a class="nav-link " href="placement.html">Placement</a> </li>
+                        <li class="nav-item me-2"> <a class="nav-link " href="gallery.html">Gallery</a> </li>
+                        <li class="nav-item me-2"> <a class="nav-link " href="contactus.html">Contact</a> </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div class="header-bg-color"></div>
     </header>
     <!--header end-->
 
@@ -71,18 +72,18 @@
         </section>
 
         <section class="dark-blue-bg">
-            <div class="container-fluid px-0 overflow-x-hidden py-1">
+            <div class="container-fluid px-0 overflow-x-hidden">
                 <div class="row">
-                    <div class="col-md-3 align-self-cente">
+                    <div class="col-md-4 align-self-cente">
                         <img src="./assets/img/img-1.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-9 align-self-center">
+                    <div class="col-md-8 align-self-center">
                         <div class="row">
-                            <div class="col-md-9 text-center text-md-start">
+                            <div class="col-md-8 text-center text-md-start">
                                 <p class="h2 my-2 text-white">READY TO START YOUR <br> CAREER IN BEAUTY & WELLNESS INDUSTRY</p>
                             </div>
-                            <div class="col-md-3 my-2 align-self-center text-center">
-                                <button class="btn btn-outline-light">JOIN OUR COURSE IMMEDIATELY</button>
+                            <div class="col-md-4 my-2 align-self-center text-center">
+                                <button type="button" class="btn btn-outline-light me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">JOIN OUR COURSE IMMEDIATELY</button>
                             </div>
                         </div>
                         </div>
@@ -439,6 +440,52 @@
     </div>
 
     <button class="btn border border-0 text-white" id="whats-chat" onclick="chart_box()"> <i class="fa-brands fa-whatsapp me-1"></i> Chart with us </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content enquir-bg">
+
+                <div class="modal-body">
+                    <form action="" class="row p-2" >
+                        <h1 class="secondry-color text-center mb-2">SEND AN INQUIRY</h1>
+                        <div class="col-md-12 mb-2">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control rounded shadow-none" id="name" required>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="phone" class="form-label">Phome No</label>
+                            <input type="text" class="form-control rounded shadow-none" id="phone" required>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control rounded shadow-none" id="email" required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <label for="courses" class="form-label">Select Your Cours</label>
+                            <select class="form-select" aria-label="Default select example" id="courses">
+                                <option selected disabled>Select</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Advance">Advance</option>
+                                <option value="Diploma/Master">Diploma/Master</option>
+                                <option value="Hi-End">Hi-End</option>
+                                <option value="Cosmetology">Cosmetology</option>
+                                <option value="Professional Make-Up">Professional Make-Up</option>
+                                <option value="HD Pro Makeup Course">HD Pro Makeup Course</option>
+                                <option value="Hair Styling">Hair Styling</option>
+                              </select>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-lg btn-secondary rounded-pill px-5" data-bs-dismiss="modal">Close</button>
+                            <button class="btn btn-lg btn-pink rounded-pill px-5" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
     
     <script src="./assets/package/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -449,15 +496,24 @@
 
         function scroll() {
         var topbar = document.body.scrollTop;
+        var navbar = document.querySelectorAll('#navbarNav-1 .nav-link')
         if (topbar >= 100 || document.documentElement.scrollTop >100) {
 
-            document.getElementsByTagName('header')[0].classList.add("bg-white");
+          //  document.getElementsByTagName('header')[0].classList.add("bg-white");
             document.getElementsByTagName('header')[0].classList.add("header-shadow");
 
+            for(let i=0; i<navbar.length; i++ ){
+                navbar[i].classList.add('text-dark')
+            }
         } 
         else {
-            document.getElementsByTagName('header')[0].classList.remove("bg-white");
+         //   document.getElementsByTagName('header')[0].classList.remove("bg-white");
             document.getElementsByTagName('header')[0].classList.remove("header-shadow");
+
+            for(let i=0; i<navbar.length; i++ ){
+                navbar[i].classList.remove('text-dark')
+            }
+
         }
 
         }
@@ -469,6 +525,10 @@
 
         close_chart_box = function(){
             document.getElementById('chat-box').style.right = "-500px";
+        }
+
+        navbar = function(){
+            document.getElementById('navbarNav-1').classList.add('nav-active')
         }
     </script>
 </body>
