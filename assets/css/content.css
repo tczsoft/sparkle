@@ -87,6 +87,23 @@
     background: linear-gradient(rgba(248, 231, 205, 0.966),rgb(250, 226, 191));
 }
 
+.custom-btn{
+--bs-btn-padding-y: 0.5rem;
+--bs-btn-padding-x: 1rem;
+--bs-btn-font-size: 1.25rem;
+--bs-btn-border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .custom-btn{
+    --bs-btn-padding-x: 0.25rem;
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-border-radius: 0.375rem;
+    margin-bottom: 10px;
+}
+}
+
 
 
 @media screen and (min-width : 992px) {
@@ -103,3 +120,4 @@
         border-radius: 2rem;
     }
 }
+

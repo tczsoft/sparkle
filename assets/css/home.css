@@ -104,7 +104,21 @@ header.header-shadow .header-bg-color{
     }
 }
 
+
+
 @media screen and (max-width:767px) {
+
+    #whats-chat{
+        width: 36px !important;
+    }
+
+    #whats-chat span{
+        display: none;
+    }
+
+    #whats-chat:hover{
+        width: 150px;
+    }
     .md-view{
         text-align: center;
     }
@@ -142,7 +156,7 @@ header.header-shadow .header-bg-color{
         position: absolute;
         box-shadow: -2em 2em 0 0 #fff inset, -2em 1em 0 0 #fff inset;
         transform: rotate(7deg);
-        
+
     }
 }
 
