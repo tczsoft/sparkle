@@ -1,4 +1,5 @@
 .wall-paper{
+    padding-bottom: 10px;
     background-image: url("../img/wallpaper/wall-1.jpg") !important;
     height: 50vh;
     background-repeat: no-repeat;
@@ -9,6 +10,8 @@
 #secondry-toggle{
     display: block; 
 }
+
+
 
 @media screen and (min-width: 992px) {
     #navbarNav{
