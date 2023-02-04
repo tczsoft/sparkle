@@ -104,6 +104,47 @@ header.header-shadow .header-bg-color{
     }
 }
 
+@media screen and (max-width:767px) {
+    .md-view{
+        text-align: center;
+    }
+
+    .md-view .navbar-toggler{
+        margin-top: 10px;
+    }
+    .md-view .navbar-brand{
+        margin-right: 0 !important;
+        z-index: 5 !important;
+        border-radius: 0 0 2rem 2rem !important;
+    }
+
+    .md-view .navbar-brand::before {
+        content: '';
+        display: block;
+        width: 3.9em;
+        height: 3.2em;
+        top: -40px;
+        right: -30px;
+        border-radius: 2.5em;
+        position: absolute;
+        box-shadow: -2em 2em 0 0 #fff inset, -2em 1em 0 0 #fff inset;
+        transform: rotate(-91deg);
+    }
+
+    .md-view .navbar-brand:after {
+        content: '';
+        display: block;
+        width: 3.9em;
+        height: 3.2em;
+        top: -40px;
+        left: -31px;
+        border-radius: 2.5em;
+        position: absolute;
+        box-shadow: -2em 2em 0 0 #fff inset, -2em 1em 0 0 #fff inset;
+        transform: rotate(7deg);
+    }
+}
+
 /*
 #hero-section .carousel-caption{
     z-index: 10;
