@@ -142,6 +142,7 @@ header.header-shadow .header-bg-color{
         position: absolute;
         box-shadow: -2em 2em 0 0 #fff inset, -2em 1em 0 0 #fff inset;
         transform: rotate(7deg);
+        
     }
 }
 
